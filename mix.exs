@@ -4,7 +4,8 @@ defmodule ExAws.ECS.Mixfile do
   @version "0.1.2"
   @url "https://github.com/davepersing/ex_aws_ecs"
   @maintainers [
-    "Dave Persing"
+    "Dave Persing",
+    "Sean Murphy"
   ]
 
   def project do

@@ -100,7 +100,7 @@ defmodule ExAws.ECSTest do
   end
 
   test "describe_container_instances" do
-    req = ExAws.ECS.describe_container_instances(["id1", "id2"])
+    req = ExAws.ECS.describe_container_instances(["id1", "id2"], cluster: "not-default")
 
     assert req.data == %{
              "Action" => "DescribeContainerInstances",
