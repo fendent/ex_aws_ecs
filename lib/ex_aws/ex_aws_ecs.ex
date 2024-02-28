@@ -81,10 +81,10 @@ defmodule ExAws.ECS do
   end
 
   def describe_services(services, opts \\ []) do
-    %{
+    request(%{
       "Action" => "DescribeServices",
       "services" => services
-    }
+    })
     |> merge_opts(opts)
     |> request()
   end
