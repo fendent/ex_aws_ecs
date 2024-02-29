@@ -105,7 +105,8 @@ defmodule ExAws.ECSTest do
     assert req.data == %{
              "Action" => "DescribeContainerInstances",
              "Version" => "2014-11-13",
-             "containerInstances" => ["id1", "id2"]
+             "containerInstances" => ["id1", "id2"],
+             "cluster" => "not-default"
            }
 
     assert req.headers == expected_headers("DescribeContainerInstances")
